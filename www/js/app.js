@@ -16,7 +16,7 @@
             var deferred = $q.defer();
 
             function getCurrentWeather(lat, lng) {
-                var url = 'https://api.forecast.io/forecast/0175b75f3ee0fdb8866221d69f4606ee/' + lat + ',' + lng + '?callback=JSON_CALLBACK';
+                var url = 'https://api.forecast.io/forecast/KEY API/' + lat + ',' + lng + '?callback=JSON_CALLBACK';
                 $http.jsonp(url)
                     .success(deferred.resolve)
                     .error(deferred.reject);
